@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0c1311] text-[#e8f1ec] font-sans antialiased selection:bg-zen-500 selection:text-white;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(103, 152, 130, 0.12) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(245, 158, 11, 0.06) 0px, transparent 50%),
+      radial-gradient(at 50% 50%, rgba(24, 37, 32, 0.8) 0px, transparent 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+}
+
+/* Glassmorphism Cards */
+.glass-card {
+  background: rgba(18, 30, 26, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(103, 152, 130, 0.2);
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.35);
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-hover:hover {
+  background: rgba(26, 42, 36, 0.85);
+  border-color: rgba(103, 152, 130, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 48px 0 rgba(0, 0, 0, 0.45);
+}
+
+.glass-input {
+  background: rgba(12, 22, 19, 0.8);
+  border: 1px solid rgba(103, 152, 130, 0.3);
+  color: #e8f1ec;
+  backdrop-filter: blur(8px);
+}
+
+.glass-input:focus {
+  border-color: #679882;
+  box-shadow: 0 0 0 2px rgba(103, 152, 130, 0.25);
+  outline: none;
+}
+
+/* Custom Zen Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(12, 19, 17, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(103, 152, 130, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(103, 152, 130, 0.6);
+}
+
+/* Animated Golden Glow */
+.gold-glow {
+  text-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+}
+
+.zen-gradient-text {
+  background: linear-gradient(135deg, #e8f1ec 0%, #b4d1c2 50%, #f59e0b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

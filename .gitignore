@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+backend/venv/
+backend/.venv/
+backend/env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.sqlite3
+yoga_life.db
+
+# Build outputs
+frontend/dist/
+frontend/build/
+dist/
+build/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# Environment variables
+.env
+.env.local
